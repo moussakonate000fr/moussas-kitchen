@@ -1,0 +1,116 @@
+:root {
+    --primary: #8b2e16;
+    --text: #333333;
+    --accent: #666666;
+    --border: #dddddd;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+h2 {
+    font-size: 1.75rem;
+    color: var(--primary);
+}
+nav a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+    padding: 0 1rem;
+}
+header, footer {
+    padding: 1rem;
+}
+.card {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.card-container {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    flex-direction: column;
+}
+h2 + p {
+    font-style: italic;
+    color: var(--accent);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.overflow-test {
+    height: 100px;
+    overflow: auto;
+}
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+}
+@media (min-width: 1024px) {
+    main {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+
+
+
+
