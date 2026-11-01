@@ -1,9 +1,11 @@
+/* ===== Variables ===== */
 :root {
     --primary: #8b2e16;
     --text: #333333;
     --accent: #666666;
     --border: #dddddd;
 }
+/* ===== Base ===== */
 img {
     max-width: 100%;
     height: auto;
@@ -31,6 +33,7 @@ h2 {
     font-size: 1.75rem;
     color: var(--primary);
 }
+/* ===== Navigation ===== */
 nav a {
   color: var(--primary);
   text-decoration: none;
@@ -40,6 +43,7 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+/* ===== Layout and cards ===== */
 main {
     padding: 0 1rem;
 }
@@ -92,6 +96,7 @@ nav ul {
     height: 100px;
     overflow: auto;
 }
+/* ===== Media queries ===== */
 @media (min-width: 768px) {
     .card-container {
         flex-direction: row;
